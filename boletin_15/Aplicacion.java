@@ -7,6 +7,7 @@ package boletin_15;
 
 import paquetes.Persoal;
 import com.company.Alumno;
+
 /**
  *
  * @author jalonsoriveiro
@@ -15,15 +16,15 @@ public class Aplicacion {
 
     public static void main(String[] args) {
         Persoal alumno1 = new Persoal(9999,"jose@");
+         Alumno obj = new Alumno();
        
-       String datos=alumno1.toString();
-        System.out.println(datos);
+        Academica nuevaAcademia = new Academica(obj.comprobarNombre(),obj.setNotaPrimeraEvaluacion(),alumno1);
         
-        Alumno obj = new Alumno(6,5,6,4,"jose");
+        String datos = nuevaAcademia.toString();
         
-        obj.setNotaPrimeraEvaluacion();
-        
-        alumno1.se
+//           System.out.println(datos);
+    
+    
     }
     
     
